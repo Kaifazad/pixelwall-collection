@@ -1,0 +1,13 @@
+{
+  "name": "pixelwall-collection",
+  "version": "1.0.0",
+  "description": "Custom Wallpaper API for Pixel Wall",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Kaif Azad",
+  "license": "ISC",
+  "dependencies": {}
+}
