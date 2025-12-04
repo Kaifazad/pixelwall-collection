@@ -42,10 +42,10 @@ const MY_WALLPAPERS = [
   {
     id: "st_03",
     urls: {
-      raw: `${BASE_URL}/strangerthings3.jpg`,
-      full: `${BASE_URL}/strangerthings3.jpg`,
-      regular: `${BASE_URL}/strangerthings3.jpg`,
-      small: `${BASE_URL}/strangerthings3.jpg`,
+      raw: `${BASE_URL}/strangerthings3.png`,
+      full: `${BASE_URL}/strangerthings3.png`,
+      regular: `${BASE_URL}/strangerthings3.png`,
+      small: `${BASE_URL}/strangerthings3.png`,
     },
     width: 1080,
     height: 1920,
