@@ -1,7 +1,7 @@
-// 1. Define Base URL
+// ✅ 1. Define Base URL
 const BASE_URL = "https://raw.githubusercontent.com/Kaifazad/pixelwall-collection/main/wallpapers";
 
-//  2. Define Your Categories & Files
+// ✅ 2. Define Your Categories & Files
 const collections = [
   // ---------------------------------------------------------
   // 1. STRANGER THINGS (41 Wallpapers)
@@ -26,22 +26,17 @@ const collections = [
   },
 
   // ---------------------------------------------------------
-  // 2. GOOGLE PIXEL (40 Wallpapers) - NEWLY ADDED
+  // 2. GOOGLE PIXEL (40 Wallpapers)
   // ---------------------------------------------------------
   {
     category: "Google Pixel",
     prefix: "gp",
     baseFilename: "pixel",
     files: [
-      // 1-12 are jpeg
       { id: 1, ext: 'jpeg' }, { id: 2, ext: 'jpeg' }, { id: 3, ext: 'jpeg' }, { id: 4, ext: 'jpeg' },
       { id: 5, ext: 'jpeg' }, { id: 6, ext: 'jpeg' }, { id: 7, ext: 'jpeg' }, { id: 8, ext: 'jpeg' },
       { id: 9, ext: 'jpeg' }, { id: 10, ext: 'jpeg' }, { id: 11, ext: 'jpeg' }, { id: 12, ext: 'jpeg' },
-      
-      // 13-16 are jpg
       { id: 13, ext: 'jpg' }, { id: 14, ext: 'jpg' }, { id: 15, ext: 'jpg' }, { id: 16, ext: 'jpg' },
-      
-      // 17-40 are png
       { id: 17, ext: 'png' }, { id: 18, ext: 'png' }, { id: 19, ext: 'png' }, { id: 20, ext: 'png' },
       { id: 21, ext: 'png' }, { id: 22, ext: 'png' }, { id: 23, ext: 'png' }, { id: 24, ext: 'png' },
       { id: 25, ext: 'png' }, { id: 26, ext: 'png' }, { id: 27, ext: 'png' }, { id: 28, ext: 'png' },
@@ -52,25 +47,31 @@ const collections = [
   },
 
   // ---------------------------------------------------------
-  // PLACEHOLDERS (Add files for these later)
+  // 3. BATMAN (23 Wallpapers) - ✅ NEWLY ADDED
   // ---------------------------------------------------------
   {
     category: "Batman",
     prefix: "bm",
     baseFilename: "batman",
-    files: [] // Add files later
+    files: [
+      { id: 1, ext: 'png' }, { id: 2, ext: 'jpg' }, { id: 3, ext: 'jpg' }, { id: 4, ext: 'jpg' },
+      { id: 5, ext: 'jpg' }, { id: 6, ext: 'jpg' }, { id: 7, ext: 'png' }, { id: 8, ext: 'png' },
+      { id: 9, ext: 'jpg' }, { id: 10, ext: 'png' }, { id: 11, ext: 'jpg' }, { id: 12, ext: 'jpeg' },
+      { id: 13, ext: 'png' }, { id: 14, ext: 'jpg' }, { id: 15, ext: 'jpg' }, { id: 16, ext: 'jpg' },
+      { id: 17, ext: 'jpg' }, { id: 18, ext: 'png' }, { id: 19, ext: 'png' }, { id: 20, ext: 'png' },
+      { id: 21, ext: 'jpg' }, { id: 22, ext: 'jpg' }, { id: 23, ext: 'png' }
+    ]
   },
-  {
-    category: "Anime",
-    prefix: "an",
-    baseFilename: "anime",
-    files: [] 
-  },
-  
-  
+
+  // ---------------------------------------------------------
+  // PLACEHOLDERS (Add files for these later)
+  // ---------------------------------------------------------
+  { category: "Anime", prefix: "an", baseFilename: "anime", files: [] },
+  { category: "Marvel", prefix: "mv", baseFilename: "marvel", files: [] },
+  { category: "Cyberpunk", prefix: "cp", baseFilename: "cyberpunk", files: [] },
 ];
 
-//  3. Generate the Master List (NO CHANGE NEEDED HERE)
+// 3. Generate the Master List (NO CHANGE NEEDED HERE)
 const MY_WALLPAPERS = collections.flatMap(collection => {
   return collection.files.map(file => {
     // Ensure numbers are 2 digits (e.g. "01", "12")
